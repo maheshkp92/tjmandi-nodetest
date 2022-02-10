@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "ea9a3732-d8e3-41e4-96f7-ac3c0cbc7cca",
+		"name": "TJMANDO NODE JS REST APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Country",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/countries",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"countries"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Country ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/country/id?startYear=1990&endYear=2014&category=co2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"country",
+						"id"
+					],
+					"query": [
+						{
+							"key": "startYear",
+							"value": "1990"
+						},
+						{
+							"key": "endYear",
+							"value": "2014"
+						},
+						{
+							"key": "category",
+							"value": "co2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
